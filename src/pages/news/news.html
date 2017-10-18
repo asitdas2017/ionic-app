@@ -30,32 +30,13 @@
 <ion-content>
     <div [ngSwitch]="iniNewsTab">
         <div *ngSwitchCase="'top'">
-
-            <ion-list>
-                <ion-list-header>
-                    Hobbits
-                </ion-list-header>
-                <a ion-item (click)="openModal({charNum: 0})">
-                          Gollum
-                        </a>
-                <a ion-item (click)="openModal({charNum: 1})">
-                          Frodo Baggins
-                        </a>
-                <a ion-item (click)="openModal({charNum: 2})">
-                          Sam
-                        </a>
-            </ion-list>
-
-
-
-
             <ion-card class="animated bounceInLeft">
-                <section class="news-card-info">
+                <section class="news-card-info" (click)="openModal({charNum: 0})">
                     <div class="news-image">
                         <img src="../../assets/images/news-01.jpg">
                     </div>
                     <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
+                        <p>Odio dolorum no sit, id mea tantas omittam moderatius splendide easea...</p>
                     </div>
                 </section>
                 <ion-item>
@@ -67,39 +48,39 @@
                             <ion-icon name="cloud-download"></ion-icon>                        
                     </button>
                     <button ion-button clear item-end>
-                            <ion-icon name="share"></ion-icon>                        
+                            <ion-icon name="share-alt"></ion-icon>                        
                     </button>
                 </ion-item>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <section class="news-card-info">
-                    <div class="news-image">
-                        <img src="../../assets/images/news-06.jpg">
-                    </div>
-                    <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
-                    </div>
-                </section>
-                <ion-item>
-                    <span item-left><span class="green">CNBC News</span> - 1h ago</span>
-                    <button ion-button clear item-end>
-                            <ion-icon name="bookmark"></ion-icon>                  
-                    </button>
-                    <button ion-button clear item-end>
-                            <ion-icon name="cloud-download"></ion-icon>                        
-                    </button>
-                    <button ion-button clear item-end>
-                            <ion-icon name="share"></ion-icon>                        
-                    </button>
-                </ion-item>
-            </ion-card>
-            <ion-card class="animated bounceInLeft">
-                <section class="news-card-info">
+                <section class="news-card-info" (click)="openModal({charNum: 1})">
                     <div class="news-image">
                         <img src="../../assets/images/news-02.jpg">
                     </div>
                     <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
+                        <p>Lorem ipsum dolor sit amet, autem epicuri expetenda eiest...</p>
+                    </div>
+                </section>
+                <ion-item>
+                    <span item-left><span class="green">CNBC News</span> - 1h ago</span>
+                    <button ion-button clear item-end>
+                            <ion-icon name="bookmark"></ion-icon>                  
+                    </button>
+                    <button ion-button clear item-end>
+                            <ion-icon name="cloud-download"></ion-icon>                        
+                    </button>
+                    <button ion-button clear item-end>
+                            <ion-icon name="share-alt"></ion-icon>                        
+                    </button>
+                </ion-item>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <section class="news-card-info" (click)="openModal({charNum: 2})">
+                    <div class="news-image">
+                        <img src="../../assets/images/news-03.jpg">
+                    </div>
+                    <div class="news-text">
+                        <p>Causae forensibus adipiscing, pri option suscipit et ridens...</p>
                     </div>
                 </section>
                 <ion-item>
@@ -116,12 +97,12 @@
                 </ion-item>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <section class="news-card-info">
+                <section class="news-card-info" (click)="openModal({charNum: 3})">
                     <div class="news-image">
-                        <img src="../../assets/images/news-07.jpg">
+                        <img src="../../assets/images/news-04.jpg">
                     </div>
                     <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
+                        <p>Mundi fabulas similique sit cu, an summo consul eos, eu consulatu...</p>
                     </div>
                 </section>
                 <ion-item>
@@ -135,6 +116,28 @@
                     <button ion-button clear item-end>
                             <ion-icon name="share"></ion-icon>                        
                     </button>
+                </ion-item>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <section class="news-card-info" (click)="openModal({charNum: 4})">
+                    <div class="news-image">
+                        <img src="../../assets/images/news-05.jpg">
+                    </div>
+                    <div class="news-text">
+                        <p>Fabulas pericula interesset pro, in pri sale nulla accommodare...</p>
+                    </div>
+                </section>
+                <ion-item>
+                    <span item-left><span class="green">CNBC News</span> - 1h ago</span>
+                    <button ion-button clear item-end>
+                                <ion-icon name="bookmark"></ion-icon>                  
+                        </button>
+                    <button ion-button clear item-end>
+                                <ion-icon name="cloud-download"></ion-icon>                        
+                        </button>
+                    <button ion-button clear item-end>
+                                <ion-icon name="share"></ion-icon>                        
+                        </button>
                 </ion-item>
             </ion-card>
         </div>
@@ -142,7 +145,29 @@
             <ion-card class="animated bounceInLeft">
                 <section class="news-card-info">
                     <div class="news-image">
-                        <img src="../../assets/images/news-01.jpg">
+                        <img src="../../assets/images/news-08.jpg">
+                    </div>
+                    <div class="news-text">
+                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
+                    </div>
+                </section>
+                <ion-item>
+                    <span item-left><span class="green">CNBC News</span> - 1h ago</span>
+                    <button ion-button clear item-end>
+                            <ion-icon name="bookmark"></ion-icon>                  
+                    </button>
+                    <button ion-button clear item-end>
+                            <ion-icon name="cloud-download"></ion-icon>                        
+                    </button>
+                    <button ion-button clear item-end>
+                            <ion-icon name="share"></ion-icon>                        
+                    </button>
+                </ion-item>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <section class="news-card-info">
+                    <div class="news-image">
+                        <img src="../../assets/images/news-07.jpg">
                     </div>
                     <div class="news-text">
                         <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
@@ -186,29 +211,7 @@
             <ion-card class="animated bounceInLeft">
                 <section class="news-card-info">
                     <div class="news-image">
-                        <img src="../../assets/images/news-02.jpg">
-                    </div>
-                    <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
-                    </div>
-                </section>
-                <ion-item>
-                    <span item-left><span class="green">CNBC News</span> - 1h ago</span>
-                    <button ion-button clear item-end>
-                            <ion-icon name="bookmark"></ion-icon>                  
-                    </button>
-                    <button ion-button clear item-end>
-                            <ion-icon name="cloud-download"></ion-icon>                        
-                    </button>
-                    <button ion-button clear item-end>
-                            <ion-icon name="share"></ion-icon>                        
-                    </button>
-                </ion-item>
-            </ion-card>
-            <ion-card class="animated bounceInLeft">
-                <section class="news-card-info">
-                    <div class="news-image">
-                        <img src="../../assets/images/news-07.jpg">
+                        <img src="../../assets/images/news-05.jpg">
                     </div>
                     <div class="news-text">
                         <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
