@@ -2,6 +2,33 @@
     border-width: 0 !important;
 }
 
+.new-login-box {
+    margin: 0 36px 24px 36px;
+}
+
+.new-login-box .item {
+    padding-left: 0;
+}
+
+.new-login-box .item-inner .label {
+    color: #8fc9fd;
+}
+
+.new-login-box .item-inner .input {
+    color: #fff;
+}
+
+.new-login-box button {
+    width: 100%;
+    margin-top: 24px;
+    background: #2365a0;
+}
+
+.new-login-box button:last-child {
+    margin-top: 0;
+    background: #134471;
+}
+
 .loginBox {
     background: linear-gradient(to bottom, #348ad6 20%, #48b0c9 100%);
 }
