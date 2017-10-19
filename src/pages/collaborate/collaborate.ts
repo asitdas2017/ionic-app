@@ -7,8 +7,10 @@ import { NavController } from 'ionic-angular';
 })
 export class CollaboratePage {
   public showdetails = false
+  public showchat = true
   constructor(public navCtrl: NavController ) {
-  
+    this.chatBox = "";
+    //this.messages = [];
   }
 
   public messages = [
@@ -34,5 +36,13 @@ export class CollaboratePage {
         time: '16-Aug-2017  21:57'
       }
     ];
+    
+    send(message) {
+      alert('ZX');
+         if(message && message != "") {
+             messages.push(message);
+         }
+         this.chatBox = "";
+    }
   
 }

@@ -7,6 +7,8 @@ import { NavController } from 'ionic-angular';
 })
 export class magazinePage {
 
+  private showMagazineList =true;
+  public showflip =false;
   constructor(public navCtrl: NavController) {
 
   }

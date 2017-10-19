@@ -10,20 +10,19 @@
             </button>
         </ion-buttons>
         <ion-title>
-            Collaborate1
+            Collaborate
         </ion-title>
         <ion-buttons end>
-            <button ion-button icon-only color="royal">
-                      <ion-icon name="log-out"></ion-icon>
-                    </button>
+            <button ion-button icon-only color="royal" (click)="showdetails=true; showchat=false;">
+                      <ion-icon name="create"></ion-icon>
+             </button>
         </ion-buttons>
     </ion-navbar>
 </ion-header>
-
 <ion-content>
     <div *ngIf="!showdetails" class="animated bounceInLeft">
         <ion-list>
-            <ion-item (click)="showdetails=!showdetails">
+            <ion-item (click)="showdetails=!showdetails; showchat=true;">
                 <div style="float:left;padding-right: 10px;">
                     <div class="char-avatar-blue">A</div>
                 </div>
@@ -32,7 +31,7 @@
                     <p class="animate-in-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit mi, varius in blandit sit amet, tempus non risus. Maecenas risus urna, auctor ac laoreet sit amet, placerat non dolor.</p>
                 </div>
             </ion-item>
-            <ion-item (click)="showdetails=!showdetails">
+            <ion-item (click)="showdetails=!showdetails;showchat=true;">
                 <div style="float:left;padding-right: 10px;">
                     <div class="char-avatar-gray">B</div>
                 </div>
@@ -41,7 +40,7 @@
                     <p class="animate-in-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit mi, varius in blandit sit amet, tempus non risus. Maecenas risus urna, auctor ac laoreet sit amet, placerat non dolor.</p>
                 </div>
             </ion-item>
-            <ion-item (click)="showdetails=!showdetails">
+            <ion-item (click)="showdetails=!showdetails;showchat=true;">
                 <div style="float:left;padding-right: 10px;">
                     <div class="char-avatar-blue">A</div>
                 </div>
@@ -53,7 +52,7 @@
         </ion-list>
     </div>
     <div *ngIf="showdetails">
-        <ion-list no-lines>
+        <ion-list no-lines *ngIf="showchat">
             <ion-item *ngFor="let msg of messages" class="animate-in-primary">
                 <div class="chatBubble {{msg.position}}">
                     <ion-icon name="contact" class="userIcon"></ion-icon>
@@ -65,7 +64,23 @@
                         </div>
                     </div>
                 </div>
-            </ion-item>
+            </ion-item>           
         </ion-list>
     </div>
 </ion-content>
+<ion-footer >   
+     <ion-grid  *ngIf="showdetails">
+        <ion-row class="chat-footer-box" >
+            <ion-col col-10>
+               <ion-input> 
+                   <textarea  [(ngModel)]="chatBox" placeholder="Type your Message..." ></textarea>
+               </ion-input>
+            </ion-col>
+            <ion-col col-2 class="chat-footer-button" >
+                 <a icon-only color="royal" >
+                    <ion-icon name="md-send"></ion-icon>
+                 </a>
+            </ion-col>
+        </ion-row>
+     </ion-grid> 
+</ion-footer>
