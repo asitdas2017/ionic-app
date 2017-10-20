@@ -145,20 +145,78 @@
     }
 }
 
-.note-news .col {
-    padding-top: 0;
-}
-
-.note-news .card-content {
-    padding-bottom: 0;
-}
-
-.note-news .col .note {
-    line-height: 35px;
+.note-news {
+    background: rgba(2, 61, 103, 0.5);
+    .col {
+        padding-top: 0;
+        .note {
+            line-height: 35px;
+        }
+    }
+    .item {
+        padding-left: 10px!important;
+        padding-right: 0!important;
+        ion-avatar[item-start] {
+            margin-right: 10px;
+        }
+        p {
+            color: #a0e0a2;
+            font-size: 11px;
+        }
+    }
+    .card-content {
+        padding: 13px 10px 10px;
+    }
+    h2 {
+        font-size: 16px;
+        color: #fff;
+        span {
+            font-size: 11px;
+            color: #2587c6;
+        }
+    }
+    p {
+        font-size: 13px;
+        color: #d7ecff;
+    }
 }
 
 .info-card h2 {
     font-size: 15px;
+}
+
+
+/* Rate 4 tiles */
+
+.rate-tiles {
+    padding: 0 8px 0 12px;
+    .col {
+        padding: 0;
+    }
+    .card {
+        background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+        width: calc(100% - 4px);
+        margin: 0;
+        padding: 5px 8px;
+        text-align: left;
+        h6 {
+            font-size: 13px;
+            color: #7efd83;
+            padding-bottom: 5px;
+            text-shadow: 1px 1px rgba(6, 64, 115, 0.5)
+        }
+        .card-title {
+            color: #fff;
+            font-size: 17px;
+            font-weight: normal;
+        }
+        .percent {
+            display: inline-block;
+            color: #000;
+            font-size: 10px;
+            font-weight: normal;
+        }
+    }
 }
 
 agm-map {

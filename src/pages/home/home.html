@@ -13,46 +13,48 @@
             </button>
         </ion-buttons>
     </ion-navbar>
-    <ion-segment [(ngModel)]="iniTab">
+    <ion-segment [(ngModel)]="iniTab" class="segmentButton">
         <ion-segment-button value="dashboard">
             Dashboard
         </ion-segment-button>
-        <ion-segment-button value="transactions">
+        <ion-segment-button value="transactions" [disabled]="true">
             Transactions
         </ion-segment-button>
-        <ion-segment-button value="planning">
-            Planning
+        <ion-segment-button value="goals" [disabled]="true">
+            Goals
         </ion-segment-button>
     </ion-segment>
 </ion-header>
 
 <ion-content>
     <div [ngSwitch]="iniTab">
-        <div *ngSwitchCase="'dashboard'">
+        <div *ngSwitchCase="'dashboard'" class="homeScreen">
+            <ion-card>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col>
+                            <div><strong>Total</strong></div>
+                        </ion-col>
+                        <ion-col col-6>
+                            <div><strong>Change</strong> (Qtr)</div>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col>
+                            <h6>$ 533,000.62</h6>
+                        </ion-col>
+                        <ion-col col-6>
+                            <h6 style="color:#4884ca">$ 2,246.62 <span style="color:#f01c0d">(-0.4%)</span></h6>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+            </ion-card>
 
-            <ion-grid>
-                <ion-row>
-                    <ion-col>
-                        <div><strong>Total</strong></div>
-                    </ion-col>
-                    <ion-col col-6>
-                        <div><strong>Change</strong></div>
-                    </ion-col>
-                </ion-row>
-                <ion-row>
-                    <ion-col>
-                        <h6>$ 533,000.62</h6>
-                    </ion-col>
-                    <ion-col col-6>
-                        <h6 style="color:#4884ca">$ 2,246.62 (-0.4%)</h6>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
 
             <ion-card>
                 <ion-card-content>
                     <ion-card-title>
-                        Value Over Time
+                        Portfolio value
                     </ion-card-title>
                     <chart [options]="options" class="optionchart"></chart>
                 </ion-card-content>
@@ -61,11 +63,22 @@
             <ion-card>
                 <ion-card-content>
                     <ion-card-title>
-                        Asset Allocations
+                        Account Summary
                     </ion-card-title>
                     <chart [options]="pieOptions" class="piechart"></chart>
                 </ion-card-content>
             </ion-card>
+            <ion-card>
+                <ion-card-header>
+                    Bryan Holoman
+                </ion-card-header>
+                <ion-card-content>
+                    21511 Tithables Circle<br> Broadlands, VA 20148-5011<br> (571)223-2538
+                    <br> bryan.holoman@lpl.com
+                    <br><br> For more information, visit <a href="#">Advisor Web Site</a>
+                </ion-card-content>
+            </ion-card>
+
         </div>
 
         <div *ngSwitchCase="'transactions'" padding>
@@ -73,7 +86,7 @@
             <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no, in civibus accusata urbanitas duo, ut ridens voluptua mel. Sea no cibo principes, nam sumo autem velit ei, nam ex vidit liber dissentias.</p>
         </div>
 
-        <div *ngSwitchCase="'planning'" padding>
+        <div *ngSwitchCase="'goals'" padding>
             <h2>Planning</h2>
             <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no, in civibus accusata urbanitas duo, ut ridens voluptua mel. Sea no cibo principes, nam sumo autem velit ei, nam ex vidit liber dissentias.Lorem ipsum dolor sit<br><br>                Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no, in civibus accusata urbanitas duo, ut ridens voluptua mel. Sea no cibo principes, nam sumo autem velit ei, nam ex vidit liber dissentias. amet, vix commodo
                 debitis no. Vide omnium omnesque eam no, in civibus accusata urbanitas duo, ut ridens voluptua mel. Sea no cibo principes, nam sumo autem velit ei, nam ex vidit liber dissentias.</p>

@@ -6,7 +6,7 @@ import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { TabsPage } from '../pages/tabs/tabs';
 import { HomePage } from '../pages/home/home';
-import { NewsPage, ModalContentPage } from '../pages/news/news';
+import { NewsPage } from '../pages/news/news';
 import { CollaboratePage } from '../pages/collaborate/collaborate';
 import { magazinePage } from '../pages/magazine/magazine';
 import { ChartModule } from 'angular2-highcharts';
@@ -36,7 +36,6 @@ const firebaseAuth = {
     TabsPage,
     HomePage,
     NewsPage,
-    ModalContentPage,
     CollaboratePage,
     magazinePage
   ],
@@ -56,7 +55,6 @@ const firebaseAuth = {
     TabsPage,
     HomePage,
     NewsPage,
-    ModalContentPage,
     CollaboratePage,
     magazinePage
   ],

@@ -1,10 +1,12 @@
 .segment {
     padding: 12px;
-}
-
-.segment .segment-button {
-    height: 2.8rem;
-    line-height: 2.6rem;
+    .segment-button {
+        height: 2.8rem;
+        line-height: 2.6rem;
+    }
+    .segment-button-disabled {
+        color: #348ad6;
+    }
 }
 
 .userAvtar img {
@@ -12,6 +14,12 @@
     height: 26px;
     border-radius: 50%;
     overflow: hidden;
+}
+
+.homeScreen {
+    .card:nth-child(1) {
+        margin-top: 0;
+    }
 }
 
 h6 {
