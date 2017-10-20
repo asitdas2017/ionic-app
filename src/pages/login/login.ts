@@ -1,32 +1,25 @@
-import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
 import { Component } from '@angular/core';
 import { TabsPage } from './../tabs/tabs';
 
-
-
 @Component({
-    selector: 'page-login',
-    templateUrl: 'login.html'
+	selector: 'page-login',
+	templateUrl: 'login.html'
 })
 export class LoginPage {
-
-	
-	tab0Root:any = TabsPage;
-
-
+	tab0Root: any = TabsPage;
 
 	// google maps zoom level
 	zoom: number = 8;
 	// initial center position for the map
-	lat: number =35.227085;
+	lat: number = 35.227085;
 	lng: number = -80.843124;
 	clickedMarker(label: string, index: number) {
-	console.log(`clicked the marker: ${label || index}`)
+		console.log(`clicked the marker: ${label || index}`)
 	}
 	mapClicked($event: MouseEvent) {
 	}
 	markerDragEnd(m: marker, $event: MouseEvent) {
-	console.log('dragEnd', m, $event);
+		console.log('dragEnd', m, $event);
 	}
 	markers: marker[] = [
 		{

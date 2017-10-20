@@ -2,8 +2,7 @@
     <ion-navbar>
         <ion-buttons start>
             <button ion-button icon-only *ngIf="!showdetails">
-                <ion-icon name="contact" ></ion-icon>
-                <ion-badge color="danger">14</ion-badge>             
+                <ion-icon name="contact" ></ion-icon>            
             </button>
             <button ion-button icon-only (click)="showdetails=!showdetails" *ngIf="showdetails">               
                     <ion-icon name="backspace" ></ion-icon>              
@@ -64,23 +63,23 @@
                         </div>
                     </div>
                 </div>
-            </ion-item>           
+            </ion-item>
         </ion-list>
     </div>
 </ion-content>
-<ion-footer >   
-     <ion-grid  *ngIf="showdetails">
-        <ion-row class="chat-footer-box" >
+<ion-footer>
+    <ion-grid *ngIf="showdetails">
+        <ion-row class="chat-footer-box">
             <ion-col col-10>
-               <ion-input> 
-                   <textarea  [(ngModel)]="chatBox" placeholder="Type your Message..." ></textarea>
-               </ion-input>
+                <ion-input>
+                    <textarea [(ngModel)]="chatBox" placeholder="Type your Message..."></textarea>
+                </ion-input>
             </ion-col>
-            <ion-col col-2 class="chat-footer-button" >
-                 <a icon-only color="royal" >
+            <ion-col col-2 class="chat-footer-button">
+                <a icon-only color="royal">
                     <ion-icon name="md-send"></ion-icon>
-                 </a>
+                </a>
             </ion-col>
         </ion-row>
-     </ion-grid> 
+    </ion-grid>
 </ion-footer>

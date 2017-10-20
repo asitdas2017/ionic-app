@@ -1,6 +1,4 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
-import {Platform} from 'ionic-angular';
 import {LoginPage} from './../login/login';
 import { App } from 'ionic-angular';
 
@@ -11,7 +9,7 @@ export class HomePage {
   loginRoot : any = LoginPage;
   options : Object;
   pieOptions : Object;
-  constructor(public navCtrl : NavController, public appCtrl: App) {
+  constructor(public appCtrl: App) {
     this.pieOptions = {
       chart: {
         type: 'pie'
