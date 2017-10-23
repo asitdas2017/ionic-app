@@ -28,7 +28,7 @@
 <ion-content>
     <div [ngSwitch]="iniTab">
         <div *ngSwitchCase="'dashboard'" class="homeScreen">
-            <ion-card>
+            <ion-card class="animated bounceInLeft">
                 <ion-grid>
                     <ion-row>
                         <ion-col>
@@ -50,7 +50,7 @@
             </ion-card>
 
 
-            <ion-card>
+            <ion-card class="animated bounceInLeft">
                 <ion-card-content>
                     <ion-card-title>
                         Portfolio value
@@ -59,7 +59,7 @@
                 </ion-card-content>
             </ion-card>
 
-            <ion-card>
+            <ion-card class="animated bounceInLeft">
                 <ion-card-content>
                     <ion-card-title>
                         Account Summary
@@ -67,7 +67,7 @@
                     <chart [options]="pieOptions" class="piechart"></chart>
                 </ion-card-content>
             </ion-card>
-            <ion-card>
+            <ion-card class="animated bounceInLeft">
                 <ion-card-header>
                     Bryan Holoman
                 </ion-card-header>
