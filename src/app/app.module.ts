@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { NewsPage } from '../pages/news/news';
 import { CollaboratePage } from '../pages/collaborate/collaborate';
 import { magazinePage } from '../pages/magazine/magazine';
+import { notificationPage } from '../pages/notifications/notifications';
 import { ChartModule } from 'angular2-highcharts';
 import { AngularFireModule } from 'angularfire2';
 
@@ -37,7 +38,9 @@ const firebaseAuth = {
     HomePage,
     NewsPage,
     CollaboratePage,
-    magazinePage
+    magazinePage,
+    notificationPage
+    
   ],
   imports: [
     BrowserModule,
@@ -56,7 +59,8 @@ const firebaseAuth = {
     HomePage,
     NewsPage,
     CollaboratePage,
-    magazinePage
+    magazinePage,
+    notificationPage
   ],
   providers: [
     StatusBar,

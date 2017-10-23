@@ -1,0 +1,166 @@
+<ion-header>
+    <ion-navbar no-border-bottom>
+        <ion-buttons start>
+            <span class="userAvtar"><img src="../../assets/images/marty-avatar.png"></span>
+        </ion-buttons>
+        <ion-title>
+            Notifications
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only color="royal">
+                      <ion-icon name="log-out"></ion-icon>
+                    </button>
+        </ion-buttons>
+    </ion-navbar>    
+</ion-header>
+<ion-content>
+    <div >
+        <div >
+            <ion-card class="animated bounceInLeft">
+                <div class="flip-news-container" [ngClass]="{hover: showflip1}">
+                    <div class="flipper">
+                        <div class="front" (click)="showflip1=true;">
+                            <section class="news-card-info">
+                                <div class="news-image">
+                                    <img src="../../assets/icon/tradebuysell.png">
+                                </div>
+                                <div class="news-text">
+                                    <p>Your order completed</p>
+                                </div>
+                            </section>
+                            <ion-item class="green-sec">
+                                <span item-left><span class="green">Buy</span> - Oct 19, 2017 1:44 p.m. ET</span>
+                            </ion-item>
+                        </div>
+                        <div class="back flip-news">
+                            <ion-card-content (click)="showflip1=false;">
+                                <p>100 stock purchased on 19th Oct 2017 <a (click)="showMagazineList=false"> Read More</a></p>
+                            </ion-card-content>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-icon name="bookmark"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="cloud-download"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="share-alt"></ion-icon>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <div class="flip-news-container" [ngClass]="{hover: showflip2}">
+                    <div class="flipper">
+                        <div class="front" (click)="showflip2=true;">
+                            <section class="news-card-info">
+                                <div class="news-image">
+                                      <img src="../../assets/icon/tradebuysell.png">
+                                </div>
+                                <div class="news-text">
+                                    <p>Order completed</p>
+                                </div>
+                            </section>
+                            <ion-item class="green-sec">
+                                <span item-left><span class="green">Buy</span> - Oct 19, 2017 1:42 p.m. ET</span>
+                            </ion-item>
+                        </div>
+                        <div class="back flip-news">
+                            <ion-card-content (click)="showflip2=false;">
+                                <p>200 stock purchased on 19th Oct 2017...<a (click)="showMagazineList=false"> Read More</a></p>
+
+                            </ion-card-content>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-icon name="bookmark"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="cloud-download"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="share-alt"></ion-icon>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <div class="flip-news-container" [ngClass]="{hover: showflip3}">
+                    <div class="flipper">
+                        <div class="front" (click)="showflip3=true;">
+                            <section class="news-card-info">
+                                <div class="news-image">
+                                    <img src="../../assets/icon/tradebuysell.png">
+                                </div>
+                                <div class="news-text">
+                                    <p>Order placed!</p>
+                                </div>
+                            </section>
+                            <ion-item class="green-sec">
+                                <span item-left><span class="green">Sell</span> - 1h ago</span>
+                            </ion-item>
+                        </div>
+                        <div class="back flip-news">
+                            <ion-card-content (click)="showflip3=false;">
+                                <p>Order placed!<a (click)="showMagazineList=false"> Read More</a></p>
+
+                            </ion-card-content>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-icon name="bookmark"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="cloud-download"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="share-alt"></ion-icon>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <div class="flip-news-container" [ngClass]="{hover: showflip5}">
+                    <div class="flipper">
+                        <div class="front" (click)="showflip5=true;">
+                            <section class="news-card-info">
+                                <div class="news-image">
+                                   <img src="../../assets/icon/tradebuysell.png">
+                                </div>
+                                <div class="news-text">
+                                    <p>Order placed.</p>
+                                </div>
+                            </section>
+                            <ion-item class="green-sec">
+                                <span item-left><span class="green">Sell</span> - 1h ago</span>
+                            </ion-item>
+                        </div>
+                        <div class="back flip-news">
+                            <ion-card-content (click)="showflip5=false;">
+                                <p>Order placed <a (click)="showMagazineList=false"> Read More</a></p>
+
+                            </ion-card-content>
+                            <ion-row>
+                                <ion-col>
+                                    <ion-icon name="bookmark"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="cloud-download"></ion-icon>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-icon name="share-alt"></ion-icon>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+            
+        </div>
+        
+    </div>
+</ion-content>
