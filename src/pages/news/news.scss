@@ -66,6 +66,12 @@
     .flip-news {
         .card-content {
             padding: 12px 16px 0px;
+            p {
+                font-weight: bold;
+                a {
+                    font-weight: normal;
+                }
+            }
         }
         .row {
             padding: 0 12px;

@@ -1,16 +1,15 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar no-border-bottom>
         <ion-buttons start>
-             <button ion-button icon-only *ngIf="!showdetails">
-                <ion-icon name="contact" ></ion-icon>
-                <ion-badge color="danger">14</ion-badge>             
-            </button>
-            <button ion-button icon-only (click)="showdetails=false" *ngIf="showdetails && showMagazineList">               
-                    <ion-icon name="backspace" ></ion-icon>              
-            </button>
-            <button ion-button icon-only (click)="showMagazineList=true" *ngIf="!showMagazineList">               
-                    <ion-icon name="backspace" ></ion-icon>              
-            </button>
+            <span class="userAvtar" *ngIf="!showdetails"><img src="../../assets/images/marty-avatar.png"></span>
+            <button ion-button color="light" icon-start (click)="showdetails=false" *ngIf="showdetails && showMagazineList">
+                    <ion-icon name='arrow-back'></ion-icon>
+                    Back
+                </button>
+            <button ion-button color="light" icon-start (click)="showMagazineList=true" *ngIf="!showMagazineList">
+                    <ion-icon name='arrow-back'></ion-icon>
+                    Back
+                </button>
         </ion-buttons>
         <ion-title>
             Digital Magazine
@@ -23,9 +22,9 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content >
-    <ion-grid class="login-news"  *ngIf="!showdetails">
-        <ion-row class="padding-top10 animated bounceInRight" >
+<ion-content>
+    <ion-grid class="login-news" *ngIf="!showdetails">
+        <ion-row class="padding-top10 animated bounceInRight">
             <ion-col>
                 <ion-card (click)="showdetails=true;showMagazineList=true;">
                     <ion-icon name="calendar"></ion-icon>
@@ -54,7 +53,7 @@
             </ion-col>
 
         </ion-row>
-         <ion-row class="padding-top10 animated bounceInRight">
+        <ion-row class="padding-top10 animated bounceInRight">
             <ion-col>
                 <ion-card (click)="showdetails=true;showMagazineList=true;">
                     <ion-icon name="calendar"></ion-icon>
@@ -66,9 +65,9 @@
                     <ion-icon name="calendar"></ion-icon>
                     <div class="card-title">May 2017</div>
                 </ion-card>
-        </ion-col>
+            </ion-col>
         </ion-row>
-           <ion-row class="padding-top10 animated bounceInLeft">
+        <ion-row class="padding-top10 animated bounceInLeft">
             <ion-col>
                 <ion-card (click)="showdetails=true;showMagazineList=true;">
                     <ion-icon name="calendar"></ion-icon>
@@ -85,47 +84,44 @@
     </ion-grid>
 
     <div *ngIf="showdetails">
-    <div  *ngIf="showMagazineList" >   
-    <ion-card class="note-news animated bounceInRight">
-      <div class="flip-container"  [ngClass]="{hover: showflip}"  >
-		<div class="flipper">
-			<div class="front" (click)="showflip=true;" >
-				 <section class="news-card-info">
-                    <div class="magazine-image">
-                        <img src="../../assets/images/news-01.jpg">
+        <div *ngIf="showMagazineList">
+            <ion-card class="note-news animated bounceInRight">
+                <div class="flip-container" [ngClass]="{hover: showflip}">
+                    <div class="flipper">
+                        <div class="front" (click)="showflip=true;">
+                            <section class="news-card-info">
+                                <div class="magazine-image">
+                                    <img src="../../assets/images/news-01.jpg">
+                                </div>
+                            </section>
+                            <ion-card-content>
+                                <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no...</p>
+                            </ion-card-content>
+                        </div>
+                        <div class="back" (click)="showflip=false;">
+                            <section class="news-card-info">
+                                <div class="news-image">
+                                    <img src="../../assets/images/news-01.jpg">
+                                </div>
+                                <div class="news-text">
+                                    <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
+                                </div>
+                            </section>
+                            <ion-card-content>
+                                <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium
+                                    omnesque eam no...</p>
+                                <a (click)="showMagazineList=false"> <span item-right><span class="green">Read More</span></span>
+                                </a>
+                            </ion-card-content>
+
+                        </div>
                     </div>
-                </section>
-                <ion-card-content>
-                    <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no...</p>
-                </ion-card-content>
-			</div>
-			<div class="back" (click)="showflip=false;" >				
-				<section class="news-card-info">
-                    <div class="news-image">
-                        <img src="../../assets/images/news-01.jpg">
-                    </div>
-                    <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
-                    </div>                  
-                </section>
-                 <ion-card-content>
-                    <p>Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no.
-                        Vide omnium omnesque eam no...</p>
-                          <a (click)="showMagazineList=false">  <span item-right><span class="green">Read More</span></span></a>
-                 </ion-card-content>
-               
-			</div>
-		</div>
-	</div>       
-    </ion-card>
-    <ion-card class="animated bounceInLeft">
-                <section class="mag-card-info">                    
+                </div>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <section class="mag-card-info">
                     <div class="mag-text">
-                        <p>Lorem ipsum dolor sit amet 
-                            Ommodo debitis no. Vide omnium omnesque eam no, in civibus..</p>
+                        <p>Lorem ipsum dolor sit amet Ommodo debitis no. Vide omnium omnesque eam no, in civibus..</p>
                     </div>
                     <div class="mag-image">
                         <img src="../../assets/images/news-01.jpg">
@@ -145,12 +141,11 @@
                 </ion-item>
             </ion-card>
             <ion-card class="animated bounceInRight">
-                <section class="mag-card-info">                   
+                <section class="mag-card-info">
                     <div class="mag-text">
-                        <p>Lorem ipsum dolor sit amet Ommodo debitis no. Vide omnium omnesque eam no,
-                             in civibus..</p>
+                        <p>Lorem ipsum dolor sit amet Ommodo debitis no. Vide omnium omnesque eam no, in civibus..</p>
                     </div>
-                     <div class="mag-image">
+                    <div class="mag-image">
                         <img src="../../assets/images/news-06.jpg">
                     </div>
                 </section>
@@ -167,47 +162,34 @@
                     </button>
                 </ion-item>
             </ion-card>
-        </div> 
-         <div  *ngIf="!showMagazineList" > 
-           <section class="news-card-info">
-                    <div class="news-image">
-                        <img src="../../assets/images/news-01.jpg">
-                    </div>
-                    <div class="news-text">
-                        <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
-                    </div>                  
-                </section>
-                 <ion-card-content>
-                    <p>Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no.
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no.
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no.
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no. 
-                        Lorem ipsum dolor sit amet, vix commodo debitis no.
-                        Vide omnium omnesque eam no...</p>                       
-                 </ion-card-content>
-                <ion-item>
-                    <span item-left><span class="green">lpl tech</span> - 3h ago</span>
-                    <button ion-button clear item-end>
+        </div>
+        <div *ngIf="!showMagazineList">
+            <section class="news-card-info">
+                <div class="news-image">
+                    <img src="../../assets/images/news-01.jpg">
+                </div>
+                <div class="news-text">
+                    <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
+                </div>
+            </section>
+            <ion-card-content>
+                <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet,
+                    vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no.
+                    Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet,
+                    vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no...</p>
+            </ion-card-content>
+            <ion-item>
+                <span item-left><span class="green">lpl tech</span> - 3h ago</span>
+                <button ion-button clear item-end>
                             <ion-icon name="bookmark"></ion-icon>                  
                     </button>
-                    <button ion-button clear item-end>
+                <button ion-button clear item-end>
                             <ion-icon name="cloud-download"></ion-icon>                        
                     </button>
-                    <button ion-button clear item-end>
+                <button ion-button clear item-end>
                             <ion-icon name="share"></ion-icon>                        
                     </button>
-                </ion-item>
-         </div> 
+            </ion-item>
+        </div>
     </div>
 </ion-content>

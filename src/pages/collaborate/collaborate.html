@@ -1,11 +1,10 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar no-border-bottom>
         <ion-buttons start>
-            <button ion-button icon-only *ngIf="!showdetails">
-                <ion-icon name="contact" ></ion-icon>            
-            </button>
-            <button ion-button icon-only (click)="showdetails=!showdetails" *ngIf="showdetails">               
-                    <ion-icon name="backspace" ></ion-icon>              
+            <span class="userAvtar" *ngIf="!showdetails"><img src="../../assets/images/marty-avatar.png"></span>
+            <button ion-button color="light" icon-start (click)="showdetails=!showdetails" *ngIf="showdetails">
+                <ion-icon name='arrow-back'></ion-icon>
+                Back
             </button>
         </ion-buttons>
         <ion-title>
