@@ -95,20 +95,17 @@
                                 </div>
                             </section>
                             <ion-card-content>
-                                <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no...</p>
+                                <p>Lorem ipsum dolor sit amet, Vide omnium omnesque eam no...</p>
                             </ion-card-content>
                         </div>
                         <div class="back" (click)="showflip=false;">
                             <section class="news-card-info">
-                                <div class="news-image">
+                                <div class="magazine-image-details">
                                     <img src="../../assets/images/news-01.jpg">
-                                </div>
-                                <div class="news-text">
-                                    <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
-                                </div>
+                                </div>                              
                             </section>
                             <ion-card-content>
-                                <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium
+                                <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium
                                     omnesque eam no...</p>
                                 <a (click)="showMagazineList=false"> <span item-right><span class="green">Read More</span></span>
                                 </a>
@@ -164,32 +161,37 @@
             </ion-card>
         </div>
         <div *ngIf="!showMagazineList">
-            <section class="news-card-info">
-                <div class="news-image">
-                    <img src="../../assets/images/news-01.jpg">
-                </div>
-                <div class="news-text">
-                    <p>Ommodo debitis no. Vide omnium omnesque eam no, in civibus</p>
-                </div>
-            </section>
-            <ion-card-content>
-                <p>Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet,
-                    vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no.
-                    Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet,
-                    vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Vide omnium omnesque eam no...</p>
-            </ion-card-content>
+        <ion-card class="mag-details">
+            <div class="details-img"> <img src="../../assets/images/news-01.jpg"></div>
+            <h6>Lorem ipsum dolor sit amet</h6>
             <ion-item>
-                <span item-left><span class="green">lpl tech</span> - 3h ago</span>
-                <button ion-button clear item-end>
-                            <ion-icon name="bookmark"></ion-icon>                  
-                    </button>
-                <button ion-button clear item-end>
-                            <ion-icon name="cloud-download"></ion-icon>                        
-                    </button>
-                <button ion-button clear item-end>
-                            <ion-icon name="share"></ion-icon>                        
-                    </button>
-            </ion-item>
+            <span item-left><span class="green">LPL</span> - 1h ago</span>
+            <button ion-button clear item-end>
+                <ion-icon name="bookmark"></ion-icon>                  
+            </button>
+            <button ion-button clear item-end>
+                <ion-icon name="cloud-download"></ion-icon>                        
+            </button>
+            <button ion-button clear item-end>
+                <ion-icon name="share-alt"></ion-icon>                        
+            </button>
+        </ion-item>
+        <div class="details-copy">
+            <p>Lorem ipsum dolor sit amet, autem epicuri expetenda ei est, ad mei alia soluta, pro an quem regione meliore. Mundi fabulas similique sit cu, an summo consul eos, eu consulatu reprimique conclusionemque eos. Agam legimus inermis sed no, eam
+                etiam graeci appareat no, usu et labitur accusamus accommodare. Odio dolorum no sit, id mea tantas omittam moderatius, atqui splendide ea sea. At nisl habemus iudicabit mea, ex iusto aliquam accusata sea. Cu postea alterum vix, ea mea
+                veri justo. Mei cu causae forensibus adipiscing, pri option suscipit et, ridens oporteat ei his. Per in iuvaret dignissim, ei homero cetero ceteros vix, agam accusamus cu usu. Ne doming percipit vim, ullum summo petentium et nam. Ex debet
+                doctus audire mei. At fabulas pericula interesset pro, in pri sale nulla accommodare.
+                <br><br> Lorem ipsum dolor sit amet, autem epicuri expetenda ei est, ad mei alia soluta, pro an quem regione meliore. Mundi fabulas similique sit cu, an summo consul eos, eu consulatu reprimique conclusionemque eos. Agam legimus inermis
+                sed no, eam etiam graeci appareat no, usu et labitur accusamus accommodare. Odio dolorum no sit, id mea tantas omittam moderatius, atqui splendide ea sea. At nisl habemus iudicabit mea, ex iusto aliquam accusata sea. Cu postea alterum
+                vix, ea mea veri justo. Mei cu causae forensibus adipiscing, pri option suscipit et, ridens oporteat ei his. Per in iuvaret dignissim, ei homero cetero ceteros vix, agam accusamus cu usu. Ne doming percipit vim, ullum summo petentium et
+                nam. Ex debet doctus audire mei. At fabulas pericula interesset pro, in pri sale nulla accommodare.
+                <br><br> Lorem ipsum dolor sit amet, autem epicuri expetenda ei est, ad mei alia soluta, pro an quem regione meliore. Mundi fabulas similique sit cu, an summo consul eos, eu consulatu reprimique conclusionemque eos. Agam legimus inermis
+                sed no, eam etiam graeci appareat no, usu et labitur accusamus accommodare. Odio dolorum no sit, id mea tantas omittam moderatius, atqui splendide ea sea. At nisl habemus iudicabit mea, ex iusto aliquam accusata sea. Cu postea alterum
+                vix, ea mea veri justo. Mei cu causae forensibus adipiscing, pri option suscipit et, ridens oporteat ei his. Per in iuvaret dignissim, ei homero cetero ceteros vix, agam accusamus cu usu. Ne doming percipit vim, ullum summo petentium et
+                nam. Ex debet doctus audire mei. At fabulas pericula interesset pro, in pri sale nulla accommodare.</p>
+        </div>
+     </ion-card>
+           
         </div>
     </div>
 </ion-content>

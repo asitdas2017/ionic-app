@@ -26,11 +26,16 @@
 }
 
 .news-card-info .magazine-image {
-    width: 100%;
+    width: 95%;
     overflow: hidden;
-    margin: 8px 8px 0 8px;
+    margin: 8px;
 }
-
+.news-card-info .magazine-image-details {
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin: 8px;
+}
 
 /* entire container, keeps perspective */
 
@@ -129,4 +134,35 @@
 .mag-card-info .mag-text p {
     color: #000;
     font-weight: 400;
+}
+
+
+.mag-details {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    .details-img img {
+        width: 100%;
+    }
+    h6 {
+        font-size: 18px;
+        font-weight: normal;
+        margin: 12px;
+    }
+    .item {
+        padding-left: 12px;
+    }
+    .details-copy {
+        margin: 12px;
+        border-top: 1px solid #e4e4e4;
+        padding-top: 12px;
+        margin-top: 0;
+        text-align: justify;
+    }
+}
+ .green {
+        color: rgb(0, 124, 0);
+ }
+ p{
+    text-align: justify;
 }
