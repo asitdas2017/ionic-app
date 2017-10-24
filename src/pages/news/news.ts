@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {} from 'ionic-angular';
+import {ModalController} from 'ionic-angular';
 
 @Component({
   selector: 'page-news', 
@@ -8,5 +8,10 @@ import {} from 'ionic-angular';
 export class NewsPage {
   iniNewsTab : string = "top";
   public showflip1 = false;
-  constructor() {}
+  constructor(private modalCtrl: ModalController) {}
+
+  openModal(){
+    const myModal = this.modalCtrl.create('ModalPage');
+    myModal.present();
+  }
 }
