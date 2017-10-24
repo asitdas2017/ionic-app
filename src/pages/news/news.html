@@ -45,7 +45,7 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content>
-                                <p><span (click)="showflip1=false;">Tesla Model 3 likely to be 'average' in reliability, Consumer...</span> <a (click)="openModal()"> Read More</a></p>
+                                <p><span (click)="showflip1=false;">Tesla Inc. TSLA, -2.34% Model 3, the Silicon Valley's auto maker first electric car aimed at the masses...</span> <a (click)="openModal()"> Read More</a></p>
                             </ion-card-content>
                             <ion-row no-padding>
                                 <ion-col>
@@ -80,7 +80,7 @@
                                     <img src="../../assets/images/news-06.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>SEC is once again ‘guiding’ companies on their use of non-GAAP numbers dfsdf sdf sdf dsfs</p>
+                                    <p>SEC is once again ‘guiding’ companies on their use of non-GAAP numbers</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -89,24 +89,24 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content (click)="showflip2=false;">
-                                <p>SEC is once again ‘guiding’ companies on their use of non-GAAP fsdfs sdf sd...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>The SEC has repeated several warnings about basic mistakes even though more than a year has passed since its...<a (click)="showflip2=false;"> Read More</a></p>
 
                             </ion-card-content>
                             <ion-row no-padding>
                                 <ion-col>
-                                    <button ion-button clear small color="dark" icon-start>
+                                    <button ion-button clear small icon-start>
                                         <ion-icon name='chatbubbles'></ion-icon>
                                         Collaborate
                                       </button>
                                 </ion-col>
                                 <ion-col text-center>
-                                    <button ion-button clear small color="dark" icon-start>
+                                    <button ion-button clear small icon-start>
                                         <ion-icon name='cloud-download'></ion-icon>
-                                        Offline
+                                        Read offline
                                       </button>
                                 </ion-col>
                                 <ion-col text-right>
-                                    <button ion-button clear small color="dark" icon-start>
+                                    <button ion-button clear small icon-start>
                                         <ion-icon name='share-alt'></ion-icon>
                                         Share
                                       </button>
@@ -117,7 +117,7 @@
                 </div>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container" [ngClass]="{hover: showflip3}">
+                <div class="flip-news-wrapper" [ngClass]="{hover: showflip3}">
                     <div class="flipper">
                         <div class="front" (click)="showflip3=true;">
                             <section class="news-card-info">
@@ -125,7 +125,7 @@
                                     <img src="../../assets/images/news-03.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Amazon, Apple, Google and Facebook will all go away within 50 years, says author...</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -134,18 +134,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content (click)="showflip3=false;">
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Scott Galloway, a professor and former entrepreneur, sees an uncertain future for Amazon.com, Apple Inc...<a (click)="showflip3=false;"> Read More</a></p>
 
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='chatbubbles'></ion-icon>
+                                            Collaborate
+                                          </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='cloud-download'></ion-icon>
+                                            Read offline
+                                          </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='share-alt'></ion-icon>
+                                            Share
+                                          </button>
                                 </ion-col>
                             </ion-row>
                         </div>
@@ -153,7 +162,52 @@
                 </div>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container" [ngClass]="{hover: showflip5}">
+                <div class="flip-news-wrapper" [ngClass]="{hover: showflip4}">
+                    <div class="flipper">
+                        <div class="front" (click)="showflip4=true;">
+                            <section class="news-card-info">
+                                <div class="news-image">
+                                    <img src="../../assets/images/news-05.jpg">
+                                </div>
+                                <div class="news-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                </div>
+                            </section>
+                            <ion-item class="green-sec">
+                                <span item-left><span class="green">CNBC News</span> - 1h ago</span>
+                            </ion-item>
+                        </div>
+                        <div class="back flip-news">
+                            <ion-card-content (click)="showflip4=false;">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a (click)="showflip4=false;"> Read More</a></p>
+
+                            </ion-card-content>
+                            <ion-row no-padding>
+                                <ion-col>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='chatbubbles'></ion-icon>
+                                            Collaborate
+                                          </button>
+                                </ion-col>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='cloud-download'></ion-icon>
+                                            Read offline
+                                          </button>
+                                </ion-col>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='share-alt'></ion-icon>
+                                            Share
+                                          </button>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+            </ion-card>
+            <ion-card class="animated bounceInLeft">
+                <div class="flip-news-wrapper" [ngClass]="{hover: showflip5}">
                     <div class="flipper">
                         <div class="front" (click)="showflip5=true;">
                             <section class="news-card-info">
@@ -161,7 +215,7 @@
                                     <img src="../../assets/images/news-04.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -170,54 +224,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content (click)="showflip5=false;">
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a (click)="showflip5=false;"> Read More</a></p>
 
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                                <ion-icon name='chatbubbles'></ion-icon>
+                                                Collaborate
+                                              </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                                <ion-icon name='cloud-download'></ion-icon>
+                                                Read offline
+                                              </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
-                                </ion-col>
-                            </ion-row>
-                        </div>
-                    </div>
-                </div>
-            </ion-card>
-            <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container" [ngClass]="{hover: showflip6}">
-                    <div class="flipper">
-                        <div class="front" (click)="showflip6=true;">
-                            <section class="news-card-info">
-                                <div class="news-image">
-                                    <img src="../../assets/images/news-05.jpg">
-                                </div>
-                                <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
-                                </div>
-                            </section>
-                            <ion-item class="green-sec">
-                                <span item-left><span class="green">CNBC News</span> - 1h ago</span>
-                            </ion-item>
-                        </div>
-                        <div class="back flip-news">
-                            <ion-card-content (click)="showflip6=false;">
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
-
-                            </ion-card-content>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                <ion-icon name='share-alt'></ion-icon>
+                                                Share
+                                              </button>
                                 </ion-col>
                             </ion-row>
                         </div>
@@ -227,15 +254,15 @@
         </div>
         <div *ngSwitchCase="'business'">
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container">
+                <div class="flip-news-wrapper">
                     <div class="flipper">
                         <div class="front">
                             <section class="news-card-info">
                                 <div class="news-image">
-                                    <img src="../../assets/images/news-01.jpg">
+                                    <img src="../../assets/images/news-02.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -244,17 +271,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content>
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a> Read More</a></p>
+
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                                        <ion-icon name='chatbubbles'></ion-icon>
+                                                        Collaborate
+                                                      </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                                        <ion-icon name='cloud-download'></ion-icon>
+                                                        Read offline
+                                                      </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                        <ion-icon name='share-alt'></ion-icon>
+                                                        Share
+                                                      </button>
                                 </ion-col>
                             </ion-row>
                         </div>
@@ -262,15 +299,15 @@
                 </div>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container">
+                <div class="flip-news-wrapper">
                     <div class="flipper">
                         <div class="front">
                             <section class="news-card-info">
                                 <div class="news-image">
-                                    <img src="../../assets/images/news-01.jpg">
+                                    <img src="../../assets/images/news-03.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -279,17 +316,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content>
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a> Read More</a></p>
+
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                                            <ion-icon name='chatbubbles'></ion-icon>
+                                                            Collaborate
+                                                          </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                                            <ion-icon name='cloud-download'></ion-icon>
+                                                            Read offline
+                                                          </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                            <ion-icon name='share-alt'></ion-icon>
+                                                            Share
+                                                          </button>
                                 </ion-col>
                             </ion-row>
                         </div>
@@ -297,15 +344,15 @@
                 </div>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container">
+                <div class="flip-news-wrapper">
                     <div class="flipper">
                         <div class="front">
                             <section class="news-card-info">
                                 <div class="news-image">
-                                    <img src="../../assets/images/news-01.jpg">
+                                    <img src="../../assets/images/news-06.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -314,17 +361,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content>
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a> Read More</a></p>
+
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='chatbubbles'></ion-icon>
+                                                                Collaborate
+                                                              </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='cloud-download'></ion-icon>
+                                                                Read offline
+                                                              </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='share-alt'></ion-icon>
+                                                                Share
+                                                              </button>
                                 </ion-col>
                             </ion-row>
                         </div>
@@ -332,15 +389,15 @@
                 </div>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container">
+                <div class="flip-news-wrapper">
                     <div class="flipper">
                         <div class="front">
                             <section class="news-card-info">
                                 <div class="news-image">
-                                    <img src="../../assets/images/news-01.jpg">
+                                    <img src="../../assets/images/news-04.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -349,17 +406,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content>
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a> Read More</a></p>
+
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                                            <ion-icon name='chatbubbles'></ion-icon>
+                                                            Collaborate
+                                                          </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                                            <ion-icon name='cloud-download'></ion-icon>
+                                                            Read offline
+                                                          </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                            <ion-icon name='share-alt'></ion-icon>
+                                                            Share
+                                                          </button>
                                 </ion-col>
                             </ion-row>
                         </div>
@@ -367,7 +434,7 @@
                 </div>
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container">
+                <div class="flip-news-wrapper">
                     <div class="flipper">
                         <div class="front">
                             <section class="news-card-info">
@@ -375,7 +442,7 @@
                                     <img src="../../assets/images/news-01.jpg">
                                 </div>
                                 <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
                                 </div>
                             </section>
                             <ion-item class="green-sec">
@@ -384,52 +451,27 @@
                         </div>
                         <div class="back flip-news">
                             <ion-card-content>
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...<a> Read More</a></p>
+
                             </ion-card-content>
-                            <ion-row>
+                            <ion-row no-padding>
                                 <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='chatbubbles'></ion-icon>
+                                                                Collaborate
+                                                              </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
+                                <ion-col text-center>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='cloud-download'></ion-icon>
+                                                                Read offline
+                                                              </button>
                                 </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
-                                </ion-col>
-                            </ion-row>
-                        </div>
-                    </div>
-                </div>
-            </ion-card>
-            <ion-card class="animated bounceInLeft">
-                <div class="flip-news-container">
-                    <div class="flipper">
-                        <div class="front">
-                            <section class="news-card-info">
-                                <div class="news-image">
-                                    <img src="../../assets/images/news-01.jpg">
-                                </div>
-                                <div class="news-text">
-                                    <p>Odio dolorum no sit, id mea tantas omittam tantas omittam...</p>
-                                </div>
-                            </section>
-                            <ion-item class="green-sec">
-                                <span item-left><span class="green">CNBC News</span> - 1h ago</span>
-                            </ion-item>
-                        </div>
-                        <div class="back flip-news">
-                            <ion-card-content>
-                                <p>Odio dolorum no sit, id mea tantas omittam moderatius easea...<a (click)="showMagazineList=false"> Read More</a></p>
-                            </ion-card-content>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-icon name="bookmark"></ion-icon>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-icon name="cloud-download"></ion-icon>
-                                </ion-col>
-                                <ion-col>
-                                    <ion-icon name="share-alt"></ion-icon>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='share-alt'></ion-icon>
+                                                                Share
+                                                              </button>
                                 </ion-col>
                             </ion-row>
                         </div>
