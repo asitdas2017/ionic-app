@@ -273,13 +273,17 @@
      -webkit-animation-duration: 750ms;
      animation-duraton: 750ms;
  }
- .chat-footer-box
- {
-     height:40px;
-     border:1px solid #ccc;
-     width:95%;
+ 
+ .chat-footer-box {
+     height: 40px;
+     border: 1px solid #ccc;
  }
- .chat-footer-button
- {
-    margin-top: 6px;
+ 
+ .chat-footer-button {
+     margin-top: 6px;
+ }
+ 
+ .collab-input .text-input {
+     width: 100%;
+     margin-top: 7px;
  }

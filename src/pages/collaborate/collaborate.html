@@ -72,9 +72,7 @@
     <ion-grid *ngIf="showdetails">
         <ion-row class="chat-footer-box">
             <ion-col col-10>
-                <ion-input>
-                    <textarea [(ngModel)]="chatBox" placeholder="Type your Message..."></textarea>
-                </ion-input>
+                <ion-input type="text" class="collab-input" [(ngModel)]="chatBox" placeholder="Type your Message..."></ion-input>
             </ion-col>
             <ion-col col-2 class="chat-footer-button">
                 <a icon-only color="royal">
