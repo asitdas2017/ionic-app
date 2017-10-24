@@ -1,7 +1,7 @@
 <ion-header>
     <ion-navbar no-border-bottom>
         <ion-buttons start>
-            <span class="userAvtar" *ngIf="!showdetails"><img src="../../assets/images/marty-avatar.png"></span>
+            <span class="userAvtar" *ngIf="!showdetails"><img src="assets/images/marty-avatar.png"></span>
             <button ion-button color="light" icon-start (click)="showdetails=!showdetails" *ngIf="showdetails">
                 <ion-icon name='arrow-back'></ion-icon>
                 Back
@@ -9,8 +9,8 @@
         </ion-buttons>
         <ion-title>
 
-            <span  *ngIf="!showdetails">Collaborate </span>
-            <span  *ngIf="showdetails">Bryan Holoman </span>            
+            <span *ngIf="!showdetails">Collaborate </span>
+            <span *ngIf="showdetails">Bryan Holoman </span>
         </ion-title>
         <ion-buttons end>
             <button ion-button icon-only color="royal" (click)="showdetails=true; showchat=false;">
