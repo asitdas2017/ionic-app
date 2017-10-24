@@ -115,6 +115,12 @@
     display: flex;
 }
 
+.mag-card-info .mag-image-main {
+    width: 40%;
+    height: 50px;
+    overflow: hidden;
+    margin: 8px 8px 0 8px;
+}
 .mag-card-info .mag-image {
     width: 40%;
     height: 100px;

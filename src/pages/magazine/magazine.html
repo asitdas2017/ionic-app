@@ -91,24 +91,30 @@
                         <div class="front" (click)="showflip=true;">
                             <section class="news-card-info">
                                 <div class="magazine-image">
-                                    <img src="assets/images/news-01.jpg">
+                                    <img src="assets/images/mag-main.png">
                                 </div>
                             </section>
                             <ion-card-content>
-                                <p>Lorem ipsum dolor sit amet, Vide omnium omnesque eam no...</p>
+                                <h3>The Wide World of Cryptocurrencies</h3>
+                                  <p>Bitcoin is back in the news. It hit a new high of $5,800 on Friday, October 13</p>
                             </ion-card-content>
                         </div>
                         <div class="back" (click)="showflip=false;">
-                            <section class="news-card-info">
-                                <div class="magazine-image-details">
-                                    <img src="assets/images/news-01.jpg">
+                            <section class="mag-card-info">
+                                <div class="mag-text">
+                                     <h3>The Wide World of Cryptocurrencies</h3>
+                                    
+                                 </div>
+                                <div class="mag-image-main">
+                                    <img src="assets/images/mag-main.png">
                                 </div>
                             </section>
-                            <ion-card-content>
-                                <p>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, vix commodo debitis no. Lorem ipsum dolor sit amet, vix commodo debitis no. Vide
-                                    omnium omnesque eam no...</p>
-                                <a (click)="showMagazineList=false"> <span item-right><span class="green">Read More</span></span>
-                                </a>
+                            <ion-card-content>  
+                                <p>Bitcoin is back in the news. It hit a new high of $5,800 on Friday, October 13.</p>                             
+                                <p>While bitcoin continues to enjoy the broadest name recognition, there are now more than 1,000 virtual currencies available.</p>
+                               <p>While every major cryptocurrency uses blockchain technology—a shared digital ledger that isn’t controlled..
+                                    <a (click)="showMagazineList=false"> <span item-right><span class="green">Read More</span></span>
+                                </a></p>
                             </ion-card-content>
 
                         </div>
@@ -118,7 +124,7 @@
             <ion-card class="animated bounceInLeft">
                 <section class="mag-card-info">
                     <div class="mag-text">
-                        <p>Lorem ipsum dolor sit amet Ommodo debitis no. Vide omnium omnesque eam no, in civibus..</p>
+                        <p>Verizon continues to win wireless subsribers. Buoyed by soft promotions around the latest iPhone, Verizon Communications Inc. boosted revenue.</p>
                     </div>
                     <div class="mag-image">
                         <img src="assets/images/news-01.jpg">
@@ -140,7 +146,8 @@
             <ion-card class="animated bounceInRight">
                 <section class="mag-card-info">
                     <div class="mag-text">
-                        <p>Lorem ipsum dolor sit amet Ommodo debitis no. Vide omnium omnesque eam no, in civibus..</p>
+                       <p>The SEC has repeated several warnings about basic mistakes even though more than a year has passed</p>
+
                     </div>
                     <div class="mag-image">
                         <img src="assets/images/news-06.jpg">
@@ -162,8 +169,8 @@
         </div>
         <div *ngIf="!showMagazineList">
             <ion-card class="mag-details">
-                <div class="details-img"> <img src="assets/images/news-01.jpg"></div>
-                <h6>Lorem ipsum dolor sit amet</h6>
+                <div class="details-img"> <img src="assets/images/mag-main.png"></div>
+                <h6>The Wide World of Cryptocurrencies</h6>
                 <ion-item>
                     <span item-left><span class="green">LPL</span> - 1h ago</span>
                     <button ion-button clear item-end>
@@ -177,18 +184,9 @@
             </button>
                 </ion-item>
                 <div class="details-copy">
-                    <p>Lorem ipsum dolor sit amet, autem epicuri expetenda ei est, ad mei alia soluta, pro an quem regione meliore. Mundi fabulas similique sit cu, an summo consul eos, eu consulatu reprimique conclusionemque eos. Agam legimus inermis sed
-                        no, eam etiam graeci appareat no, usu et labitur accusamus accommodare. Odio dolorum no sit, id mea tantas omittam moderatius, atqui splendide ea sea. At nisl habemus iudicabit mea, ex iusto aliquam accusata sea. Cu postea alterum
-                        vix, ea mea veri justo. Mei cu causae forensibus adipiscing, pri option suscipit et, ridens oporteat ei his. Per in iuvaret dignissim, ei homero cetero ceteros vix, agam accusamus cu usu. Ne doming percipit vim, ullum summo petentium
-                        et nam. Ex debet doctus audire mei. At fabulas pericula interesset pro, in pri sale nulla accommodare.
-                        <br><br> Lorem ipsum dolor sit amet, autem epicuri expetenda ei est, ad mei alia soluta, pro an quem regione meliore. Mundi fabulas similique sit cu, an summo consul eos, eu consulatu reprimique conclusionemque eos. Agam legimus
-                        inermis sed no, eam etiam graeci appareat no, usu et labitur accusamus accommodare. Odio dolorum no sit, id mea tantas omittam moderatius, atqui splendide ea sea. At nisl habemus iudicabit mea, ex iusto aliquam accusata sea. Cu
-                        postea alterum vix, ea mea veri justo. Mei cu causae forensibus adipiscing, pri option suscipit et, ridens oporteat ei his. Per in iuvaret dignissim, ei homero cetero ceteros vix, agam accusamus cu usu. Ne doming percipit vim,
-                        ullum summo petentium et nam. Ex debet doctus audire mei. At fabulas pericula interesset pro, in pri sale nulla accommodare.
-                        <br><br> Lorem ipsum dolor sit amet, autem epicuri expetenda ei est, ad mei alia soluta, pro an quem regione meliore. Mundi fabulas similique sit cu, an summo consul eos, eu consulatu reprimique conclusionemque eos. Agam legimus
-                        inermis sed no, eam etiam graeci appareat no, usu et labitur accusamus accommodare. Odio dolorum no sit, id mea tantas omittam moderatius, atqui splendide ea sea. At nisl habemus iudicabit mea, ex iusto aliquam accusata sea. Cu
-                        postea alterum vix, ea mea veri justo. Mei cu causae forensibus adipiscing, pri option suscipit et, ridens oporteat ei his. Per in iuvaret dignissim, ei homero cetero ceteros vix, agam accusamus cu usu. Ne doming percipit vim,
-                        ullum summo petentium et nam. Ex debet doctus audire mei. At fabulas pericula interesset pro, in pri sale nulla accommodare.</p>
+                    <p>Bitcoin is back in the news. It hit a new high of $5,800 on Friday, October 13, but then fell nearly 9% after the U.S. Commodity Futures Trading Commission (CFTC) issued a report reiterating that cryptocurrencies may fall under the agency’s jurisdiction in certain circumstances.</p>
+                    <p>While bitcoin continues to enjoy the broadest name recognition, there are now more than 1,000 virtual currencies available. A few of these competitors saw their market share increase this year as bitcoin’s fell, though this has reversed in recent months.</p>
+               <p>While every major cryptocurrency uses blockchain technology—a shared digital ledger that isn’t controlled by any central party —the goals of each network are different.</p>
                 </div>
             </ion-card>
 
