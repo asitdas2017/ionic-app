@@ -46,3 +46,76 @@ chart.piechart {
     font-weight: normal;
     padding: 3px 6px 3px 5px;
 }
+
+.dashboard-wrap {
+    perspective: 1000px;
+    width: 100%;
+    height: 240px;
+    .front,
+    .back {
+        width: 100%;
+    }
+    .front {
+        chart {
+            display: block;
+            height: 180px;
+        }
+    }
+    .back {
+        chart {
+            display: block;
+            height: 120px;
+        }
+        .card-content {
+            p {
+                font-weight: 500;
+                text-align: left;
+            }
+        }
+        .row {
+            .col {
+                padding: 0 10px;
+                .button {
+                    padding: 0;
+                }
+                .icon {
+                    color: #1c62a0;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+.dashboard-wrap.hover .flipper,
+.dashboard-wrap.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.dashboard-wrap.bigsize {
+    height: 420px;
+    .front {
+        chart.piechart {
+            height: 350px;
+        }
+    }
+    .back {
+        chart.piechart {
+            height: 300px;
+        }
+    }
+}
+
+.dashboard-wrap.smallsize {
+    height: 180px;
+    .front {
+        chart.piechart {
+            height: 350px;
+        }
+    }
+    .back {
+        chart.piechart {
+            height: 300px;
+        }
+    }
+}

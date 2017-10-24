@@ -51,31 +51,138 @@
 
 
             <ion-card class="animated bounceInLeft">
-                <ion-card-content>
-                    <ion-card-title>
-                        Portfolio value
-                    </ion-card-title>
-                    <chart [options]="options" class="optionchart"></chart>
-                </ion-card-content>
+                <div class="dashboard-wrap" [ngClass]="{hover: Dashboardflip}">
+                    <div class="flipper">
+                        <div class="front" (click)="Dashboardflip=true;">
+                            <ion-card-content>
+                                <ion-card-title>
+                                    Portfolio value
+                                </ion-card-title>
+                                <chart [options]="options" class="optionchart"></chart>
+                            </ion-card-content>
+                        </div>
+                        <div class="back" (click)="Dashboardflip=false;">
+                            <ion-card-content>
+                                <ion-card-title>
+                                    Portfolio value
+                                </ion-card-title>
+                                <chart [options]="options" class="optionchart"></chart>
+                            </ion-card-content>
+                            <ion-row no-padding>
+                                <ion-col>
+                                    <button ion-button clear small icon-start>
+                                    <ion-icon name='chatbubbles'></ion-icon>
+                                    Collaborate
+                                  </button>
+                                </ion-col>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                    <ion-icon name='logo-rss'></ion-icon>
+                                    Subscribe
+                                  </button>
+                                </ion-col>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                    <ion-icon name='share-alt'></ion-icon>
+                                    Share
+                                  </button>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
             </ion-card>
 
             <ion-card class="animated bounceInLeft">
-                <ion-card-content>
-                    <ion-card-title>
-                        Account Summary
-                    </ion-card-title>
-                    <chart [options]="pieOptions" class="piechart"></chart>
-                </ion-card-content>
+                <div class="dashboard-wrap bigsize" [ngClass]="{hover: Dashboardflip2}">
+                    <div class="flipper">
+                        <div class="front" (click)="Dashboardflip2=true;">
+                            <ion-card-content>
+                                <ion-card-title>
+                                    Account Summary
+                                </ion-card-title>
+                                <chart [options]="pieOptions" class="piechart"></chart>
+                            </ion-card-content>
+                        </div>
+                        <div class="back" (click)="Dashboardflip2=false;">
+                            <ion-card-content>
+                                <ion-card-title>
+                                    Account Summary
+                                </ion-card-title>
+                                <chart [options]="pieOptions" class="piechart"></chart>
+                            </ion-card-content>
+                            <ion-row no-padding>
+                                <ion-col>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='chatbubbles'></ion-icon>
+                                            Collaborate
+                                          </button>
+                                </ion-col>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='logo-rss'></ion-icon>
+                                            Subscribe
+                                          </button>
+                                </ion-col>
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                            <ion-icon name='share-alt'></ion-icon>
+                                            Share
+                                          </button>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+
+
             </ion-card>
             <ion-card class="animated bounceInLeft">
-                <ion-card-header>
-                    Bryan Holoman
-                </ion-card-header>
-                <ion-card-content>
-                    21511 Tithables Circle<br> Broadlands, VA 20148-5011<br> (571)223-2538
-                    <br> bryan.holoman@lpl.com
-                    <br><br> For more information, visit <a href="#">Advisor Web Site</a>
-                </ion-card-content>
+                <div class="dashboard-wrap smallsize" [ngClass]="{hover: Dashboardflip3}">
+                    <div class="flipper">
+                        <div class="front" (click)="Dashboardflip3=true;">
+                            <ion-card-header>
+                                Bryan Holoman
+                            </ion-card-header>
+                            <ion-card-content>
+                                21511 Tithables Circle<br> Broadlands, VA 20148-5011<br> (571)223-2538
+                                <br> bryan.holoman@lpl.com
+                                <br><br>More information, visit <a href="#">Advisor Web Site</a>
+                            </ion-card-content>
+                        </div>
+                        <div class="back" (click)="Dashboardflip3=false;">
+                            <ion-card-header>
+                                Bryan Holoman
+                            </ion-card-header>
+                            <ion-card-content>
+                                21511 Tithables Circle<br> Broadlands, VA 20148-5011<br> (571)223-2538
+                                <br> bryan.holoman@lpl.com
+                            </ion-card-content>
+                            <ion-row no-padding>
+                                <ion-col text-left>
+                                    <button ion-button clear small icon-start>
+                                                                <ion-icon name='call'></ion-icon>
+                                                                Call
+                                                              </button>
+                                </ion-col>
+                                <ion-col>
+                                    <button ion-button clear small icon-start>
+                                                        <ion-icon name='chatbubbles'></ion-icon>
+                                                        Collaborate
+                                                      </button>
+                                </ion-col>
+
+                                <ion-col text-right>
+                                    <button ion-button clear small icon-start>
+                                                        <ion-icon name='mail'></ion-icon>
+                                                        Email
+                                                      </button>
+                                </ion-col>
+                            </ion-row>
+                        </div>
+                    </div>
+                </div>
+
             </ion-card>
 
         </div>
